@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "mvp_ibero",
+  "homepage": "mvp-ibero-carlos-benitez.netlify.app",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

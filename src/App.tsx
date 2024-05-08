@@ -7,7 +7,7 @@ import Notfound from './components/common/404'
 function App() {
 
   return (
-    <BrowserRouter basename="/mvp_ibero">
+    <BrowserRouter basename="/mvp-ibero-carlos-benitez.netlify.app">
       <Routes>
         
         <Route
