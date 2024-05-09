@@ -26,7 +26,13 @@ nav{
     font-size: 34px;
     font-weight: 600;
     color: rgb(240, 233, 223);
-    margin-right: 30px;
+ 
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 6px; */
+    justify-content: center;
 }
 
 .btn-menu{
@@ -179,4 +185,8 @@ footer .icons{
     }
     
     
+}
+
+.filterfulldev{
+    filter: invert(1);
 }

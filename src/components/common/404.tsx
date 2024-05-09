@@ -11,6 +11,7 @@ const Notfound = ({text,title} : any): React.ReactElement => {
                 <div className="errtitle">{title}</div>
             }
             {!text ? <div className="msg"><p>¡Lo sentimos página no encontrada!</p></div> : <div className="msg"><p>{text}</p></div>}
+            <div className="msg"><p>Carlos Alberto Gallego Benítez - MVP Iberoamericana</p></div>
         </div>
     )
 }
