@@ -61,12 +61,12 @@ const Home = () : React.ReactElement => {
 
                 <div className="banner-overlay"></div>
                 <div className="information">
-                    <h1>Welcome to this wonderful world</h1>
+                    {/* <h1>Welcome to this wonderful world</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae
                         fugit error dolor cum animi et at ducimus similique in.
-                    </p>
-                    <button>Get Started</button>
+                    </p> */}
+                    <button>Ver Tableros</button>
                 </div>
             </section>
 
