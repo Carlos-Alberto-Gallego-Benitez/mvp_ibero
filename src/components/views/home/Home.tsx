@@ -5,6 +5,10 @@ import lofoFulldev from "../../../images/logos/FullDev_Mesadetrabajo.png";
 import dashboarneon from "../../../images/carrusel/dashboarneon.png";
 import loginneon from "../../../images/carrusel/loginneongomez.png";
 import perfilneon from "../../../images/carrusel/perfilneongomes.png"
+import iconoNen from "../../../icons/neon.png"
+import nuketowsoft from "../../../icons/nuketowsoft.png"
+import videoneongomez from "../../../videos/videoneongomez.mp4"
+import segGit from "../../../images/general/seggit.png"
 
 const Home = () : React.ReactElement => {
     
@@ -41,6 +45,8 @@ const Home = () : React.ReactElement => {
                         <div className="carusel-item">
                             <img src={perfilneon} alt="image 1" />
                         </div>
+                        
+
                     </div>
 
                     <div className="elements">
@@ -57,17 +63,11 @@ const Home = () : React.ReactElement => {
                              <img src={perfilneon} alt="image 1" />
                         </label>
                     </div>
+                    <div id="particles-js" className="absolute z-10 inset-0"><canvas className="particles-js-canvas-el margenesparticle"  width="1357" height="607"></canvas></div>
                 </div>
 
                 <div className="banner-overlay"></div>
-                <div className="information">
-                    {/* <h1>Welcome to this wonderful world</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae
-                        fugit error dolor cum animi et at ducimus similique in.
-                    </p> */}
-                    <button>Ver Tableros</button>
-                </div>
+
             </section>
 
             <main>
@@ -93,17 +93,40 @@ const Home = () : React.ReactElement => {
                         </div>
                     </div>
                 </article>
-                <article className="container">
+                
+                <article className="container mt-5">
                     <div className="row justify-content-center section-text">
                         <div className="col-md-6 align-self-center">
                             <p className="mb-8">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ipsam odit necessitatibus et aut porro laudantium nostrum dicta debitis fuga accusamus ducimus possimus alias, reiciendis incidunt ut cupiditate ab totam!
-                                Magnam nihil non delectus ratione id perspiciatis tempora itaque corrupti placeat eaque, qui alias hic culpa earum aspernatur et nostrum sapiente exercitationem est eum autem saepe optio possimus. Sunt, consectetur.
+                                Neón Gómez  es una empresa de venta de anuncios publicitarios hechos en acrílico y neón, a lo largo de su trayectoria empresarial se ha enfrentado a grandes retos en el mercado y afortunadamente se ha expandido de manera extraordinaria es por eso que se ha sistematizado toda la gestión de venas compra y fabricación de anuncios mediante el sistema  Neón Gómez – Nuketow Soft para cubrir la necesidad de sistematizar toda la información de Neón Gómez en Nuketow Soft permitiendo así obtener detalles claros de recursos  e información en tiempo real de todo lo que sucede en Neón Gómez 
                             </p>
                         </div>
-                        <button className="btn-section">Get Started</button>
+                        <div className="centen-imglogo">
+                            <img className="icononeon" src={iconoNen} alt="" />
+                            <img className="icononuketowsoft" src={nuketowsoft} alt="" />
+                        </div>
                     </div>
                 </article>
+
+                <article className="container">
+                    <div className="row align-items-center">
+                        <div className="col-md-4">
+
+                            <p className="mb-4">
+                                A lo largo del desarrollo se  pudo implementar el desarrollo de metodologías agiles como scrum mediante este proyecto, el cual  generado bajo la cobertura de 7 sprint de desarrollo con una duración de 11 días cada sprint aplicando seguimientos como dailys, retrospectivas,  estimaciones de tiempo y requerimientos por lo que fue necesario la ayuda de un equipo conformado por QA, Lider, Desarrolladores y Arquitectos, para poder completar con éxito esta labor, se implementó también el seguimiento al código mediante git y github
+                            </p>
+                        </div>
+                        <div className="col-md-4">
+                            <img src={segGit} className="rounded mx-auto d-block" alt="Imgage 5" />
+                        </div>
+                        <div className="col-md-4">
+                            <p className="mb-4">
+                                Optimizando tareas como CI/CD con Devops permitiendo facilitar la automatización de despliegues de la aplicación se realizaron controles y seguimientos en cada commit y desarrollo aplicado en cada sprint, para que cada paso cada vez fuera mas perfecto y  eficaz, con este control de versiones se logró mitigar fallos de compilación y despliegues se versionó cada etapa de la aplicación y se aseguró la integridad de la estabilidad de la aplicación mientras el cliente  Neón Gómez la usaba.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
                 <article className="container">
                     <div className="row align-items-center">
                         <div className="col-md-4">
@@ -158,13 +181,11 @@ const Home = () : React.ReactElement => {
                             <p className="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolorum, delectus
                                 eos natus laudantium recusandae explicabo? Nam velit voluptatem, qui neque, alias ab
                                 exercitationem quas beatae corporis porro, laboriosam hic.</p>
-                            <p className="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolore totam tempore.
-                                Delectus voluptatem incidunt quaerat commodi animi culpa eaque nesciunt fuga, ab pariatur nulla
-                                obcaecati architecto id, neque accusantium!</p>
+                            <p className="mb-4">hol!</p>
                         </div>
                         <div className="col-md-6">
                             <video  className="img-fluid" autoPlay loop muted>
-                                <source src={'./imagenes/Video.mp4'} type="video/mp4" />
+                                <source src={videoneongomez} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -216,11 +237,11 @@ const Home = () : React.ReactElement => {
                             <ul className="icons">
                                 <li>
                                     <i className='bx bxl-whatsapp'></i>
-                                    <span>Whatsapp</span>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=573103948423" ><span>Whatsapp</span></a>
                                 </li>
                                 <li>
                                     <i className='bx bxl-instagram'></i>
-                                    <span>Instagram</span>
+                                    <a target="_blank" href="https://www.instagram.com/avisosneon_medellin/"><span>Instagram</span></a>
                                 </li>
                                 <li>
                                     <i className='bx bxl-twitter'></i>
