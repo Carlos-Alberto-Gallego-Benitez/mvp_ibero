@@ -226,8 +226,8 @@ const Home = (): React.ReactElement => {
                                 <input type="email" className="form-control" placeholder="Email" />
                             </div>
                             <div className="form-group col">
-                                <label htmlFor="inputEmail4">Password</label>
-                                <input type="password" className="form-control" placeholder="Password" />
+                                <label htmlFor="inputEmail4">Observación</label>
+                                <input type="text" className="form-control" placeholder="Password" />
                             </div>
                         </div>
                         <div className="row-izquierda">
