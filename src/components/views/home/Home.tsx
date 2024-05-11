@@ -213,11 +213,11 @@ const Home = (): React.ReactElement => {
                         <div className="row">
                             <div className="form-group col">
                                 <label htmlFor="inputEmail4">Nombres</label>
-                                <input type="text" className="form-control" placeholder="Primer Nombre" />
+                                <input type="text" className="form-control" placeholder="Nombres" />
                             </div>
                             <div className="form-group col">
                                 <label htmlFor="inputEmail4">Epellidos</label>
-                                <input type="text" className="form-control" placeholder="Segundo Nombre" />
+                                <input type="text" className="form-control" placeholder="Apellidos" />
                             </div>
                         </div>
                         <div className="row mt-5">
@@ -227,7 +227,7 @@ const Home = (): React.ReactElement => {
                             </div>
                             <div className="form-group col">
                                 <label htmlFor="inputEmail4">Observación</label>
-                                <input type="text" className="form-control" placeholder="Password" />
+                                <input type="text" className="form-control" placeholder="Observación" />
                             </div>
                         </div>
                         <div className="row-izquierda">
