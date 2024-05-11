@@ -103,7 +103,6 @@ img {
 }
 
 .content {
-    position: absolute;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -298,10 +297,9 @@ main{
     color: black;
 }
 
-article.container{
+article.container-repl{
     padding: 1em;
     margin-top: 35px;
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,12 +426,23 @@ footer .icons{
     }
 
     .carusel-item img{
-        height: 100vh;
+        height: 35vh;
     }
 
-    article.container{
-        height: 550px;
+    .content {
+        height: auto;
     }
+
+    .banner-overlay {
+        height: 46vh;
+    }
+    .elements {
+        bottom: auto;
+    }
+
+    /* article.container-repl{
+        height: 550px;
+    } */
 
     article img{
         margin-bottom: 15px;
@@ -485,6 +494,34 @@ footer .icons{
         display: none;
     }
     
-    
+    iframe #container{
+        display: flex !important;
+            flex-direction: column !important;
+            flex-wrap: nowrap !important;
+    }
+}
+
+.colorbtn{
+    background-color: #333333;
+    margin: 0;
+    border: none;
+}
+
+.colorbtn:hover {
+    background-color: #333333;
+}
+
+.colorbtn:focus {
+    background-color: #333333;
+    box-shadow: none;
+}
+
+.btn-primary:active:focus{
+    box-shadow: none;
+}
+
+.colorbtn:focus:active:focus {
+    background-color: #333333;
+    box-shadow: none;
 }
 

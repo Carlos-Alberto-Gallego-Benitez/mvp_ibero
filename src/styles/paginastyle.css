@@ -71,11 +71,7 @@ nav{
     display: none;
 }
 
-main{
-    margin-top: 100px;
-}
-
-section.container{
+section.container-repl{
     padding: 1em;
     margin-bottom: 20px;
     height: 300px;
@@ -93,6 +89,10 @@ img {
 footer{
     background: #333333;
     color: #ffffff;
+}
+
+.container-repl{
+    max-width: auto !important;
 }
 
 footer h3{
@@ -138,7 +138,7 @@ footer .icons{
         display: block;
     }
 
-    section.container{
+    section.container-repl{
         height: 800px;
     }
 
@@ -146,7 +146,7 @@ footer .icons{
         text-align: center;
     }
     
-    section.container img{
+    section.container-repl img{
         margin-bottom: 20px;
     }
 
@@ -226,4 +226,30 @@ footer .icons{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.icon-github{
+    background-image: url('../icons/github.svg');
+    height: 250px ;
+    width: 256px ;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.flexcenter{
+    justify-content: center;
+}
+
+.iframeancho{
+    height: 100vh;
+}
+
+.contentiframe{
+    width: 100%;
+}
+
+.culum{
+    text-align:center;
 }
