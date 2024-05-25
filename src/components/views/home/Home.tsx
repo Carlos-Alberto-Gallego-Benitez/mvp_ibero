@@ -216,7 +216,7 @@ const Home = (): React.ReactElement => {
                                 <input type="text" className="form-control" placeholder="Nombres" />
                             </div>
                             <div className="form-group col">
-                                <label htmlFor="inputEmail4">Epellidos</label>
+                                <label htmlFor="inputEmail4">Apellidos</label>
                                 <input type="text" className="form-control" placeholder="Apellidos" />
                             </div>
                         </div>
