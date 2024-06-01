@@ -1,10 +1,6 @@
 import React, { ChangeEvent, Fragment } from "react";
-import neongomez1 from "../../../images/carrusel/neongomez1.png";
 // import logoIBero from "../../../images/logos/1-Logo-IBEROAMERICANA.png"
 import lofoFulldev from "../../../images/logos/FullDev_Mesadetrabajo.png";
-import dashboarneon from "../../../images/carrusel/dashboarneon.png";
-import loginneon from "../../../images/carrusel/loginneongomez.png";
-import perfilneon from "../../../images/carrusel/perfilneongomes.png"
 import iconoNen from "../../../icons/neon.png"
 import nuketowsoft from "../../../icons/nuketowsoft.png"
 import videoneongomez from "../../../videos/videoneongomez.mp4"
