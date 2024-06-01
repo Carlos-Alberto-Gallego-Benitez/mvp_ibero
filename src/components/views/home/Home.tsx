@@ -64,50 +64,7 @@ const Home = (): React.ReactElement => {
                 </nav>
             </header>
 
-            <section className="home">
-                <div className="content">
-
-                    <input type="radio" name="indicator" id="indicator1" hidden />
-                    <input type="radio" name="indicator" id="indicator2" hidden />
-                    <input type="radio" name="indicator" id="indicator3" hidden />
-                    <input type="radio" name="indicator" id="indicator4" hidden />
-
-                    <div className="slide">
-                        <div className="carusel-item">
-                            <img src={neongomez1} alt="image 1" />
-                        </div>
-                        <div className="carusel-item">
-                            <img src={dashboarneon} alt="image 1" />
-                        </div>
-                        <div className="carusel-item">
-                            <img src={loginneon} alt="image 1" />
-                        </div>
-                        <div className="carusel-item">
-                            <img src={perfilneon} alt="image 1" />
-                        </div>
-                        
-
-                    </div>
-
-                    <div className="elements">
-                        <label className="elements-item" htmlFor="indicator1">
-                            <img src={neongomez1} alt="image 1" />
-                        </label>
-                        <label className="elements-item" htmlFor="indicator2">
-                            <img src={dashboarneon} alt="image 1" />
-                        </label>
-                        <label className="elements-item" htmlFor="indicator3">
-                             <img src={loginneon} alt="image 1" />
-                        </label>
-                        <label className="elements-item" htmlFor="indicator4">
-                             <img src={perfilneon} alt="image 1" />
-                        </label>
-                    </div>
-                </div>
-
-                <div className="banner-overlay"></div>
-
-            </section>
+ 
 
             <main>
      
@@ -187,9 +144,103 @@ const Home = (): React.ReactElement => {
                         </div>
                     </div>
                 </article>
-                <article className="container-repl">
+
+                {/* <article className="container-repl">
                     <div className="row align-items-center contentiframe">
                         <iframe id='iframertask' className="iframeancho" width="100%" height="100%" src="https://kamban-tablero.netlify.app/"></iframe>
+                    </div>
+                </article> */}
+
+                <article className="container-repl">       
+                   
+                    <div className="row width100 text-aling-center ">
+                         <h3>Sobre Scrum en Neón Gómez</h3>
+                        <div className="accordion" id="accordionExample">
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingOne">
+                                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Casos de Uso
+                                </button>
+                                </h2>
+                                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingTwo">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Sprint
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingThree">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Historias de Usuario
+                                </button>
+                                </h2>
+                                <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFour">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Daily
+                                </button>
+                                </h2>
+                                <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingFive">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Matriz de requisitos
+                                </button>
+                                </h2>
+                                <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingSix">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Tablero
+                                </button>
+                                </h2>
+                                <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingeIght1">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIght1" aria-expanded="false" aria-controls="collapseIght1">
+                                    Retrospectiva
+                                </button>
+                                </h2>
+                                <div id="collapseIght1" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <article className="container-repl">

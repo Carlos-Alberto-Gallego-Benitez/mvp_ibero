@@ -1,10 +1,15 @@
 
+
 /*font family normal para los textos principales*/
 @font-face {
     font-family: "WorkSans-Normal";
     src: local("WorkSans-Normal"),
         url("../fonts/WorkSans-Regular.ttf") format("truetype");
     font-weight: normal;
+}
+
+body{
+    font-family: 'WorkSans-Normal';
 }
 
 *{
@@ -523,5 +528,13 @@ footer .icons{
 .colorbtn:focus:active:focus {
     background-color: #333333;
     box-shadow: none;
+}
+
+.width100{
+    width: 100%;
+}
+
+.text-aling-center{
+    text-align: center;
 }
 
