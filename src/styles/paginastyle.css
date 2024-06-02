@@ -242,6 +242,19 @@ footer .icons{
     justify-content: center;
 }
 
+.atributeA{
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.accordion-body{
+    background-color: #a5a0a0;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
 .iframeancho{
     height: 100vh;
 }

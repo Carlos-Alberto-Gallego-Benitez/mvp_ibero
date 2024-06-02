@@ -1,9 +1,10 @@
-import React, { ChangeEvent, Fragment } from "react";
-// import logoIBero from "../../../images/logos/1-Logo-IBEROAMERICANA.png"
+import React, {  Fragment } from "react";
 import lofoFulldev from "../../../images/logos/FullDev_Mesadetrabajo.png";
 import iconoNen from "../../../icons/neon.png"
+import imgSprint from "../../../images/general/Sprint.png"
+import backlog from "../../../images/general/backlog.png"
+import huNeonGomez from "../../../images/general/HUNeonGomez.png"
 import nuketowsoft from "../../../icons/nuketowsoft.png"
-import videoneongomez from "../../../videos/videoneongomez.mp4"
 import segGit from "../../../images/general/seggit.png"
 import commits from "../../../images/general/commits.png"
 import tablero from "../../../images/general/tablero.png"
@@ -15,19 +16,8 @@ import { Chart } from "react-google-charts";
 
 const Home = (): React.ReactElement => {
 
-    function seletect(e : ChangeEvent<HTMLSelectElement>) {
-        if (e.target.value == '1') {
-            window.open('https://carlosalgabez08.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMzYxMjY2MGFhNzIyNDkyMmE5ZTAzMGYxMDE2MmI3MDciLCJwIjoiaiJ9');  
-        }
-        if (e.target.value == '2') {
-            window.open('https://carlosalgabez08.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiNGM5ZjVlZjk1ODBkNDYyMzk0YTEyYzM3YjdkMjViOWYiLCJwIjoiaiJ9');  
-        }
-        if (e.target.value == '3') {
-            window.open('https://carlosalgabez08.atlassian.net/wiki/external/ZGI3Nzc1MDgwZDYzNDE0YzhlYzAyNjg4MDBmYWJmNjg');  
-        }
-    }
 
-     const data = [
+    const data = [
         ["Gestión", "Scrum", "Kanban", "Agilismo", "Desarrollo", "Integración"],
         ["2020", 1526000, 2526000, 1526000,5008000, 6008000],
         ["2021", 3792000, 3792000,  3792000, 7500000, 5008000],
@@ -122,7 +112,7 @@ const Home = (): React.ReactElement => {
                     </div>
                 </article>
 
-                <article className="container-repl">
+                {/* <article className="container-repl">
                     <div className="row align-items-center">
                         <div className="col-md-6">
                             <label htmlFor="">Kanban Neón Gómez</label>
@@ -139,7 +129,7 @@ const Home = (): React.ReactElement => {
                             <img src={tablero} alt="" />
                         </div>
                     </div>
-                </article>
+                </article> */}
 
                 {/* <article className="container-repl">
                     <div className="row align-items-center contentiframe">
@@ -159,8 +149,11 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text">
+                                    <strong>Mediante casos de uso es representada la gestión del sistema Neón Gómez para visualizar el flujo de la aplicación, con actores que son los encargados de ejecutar cada tarea dentro del sistema de Neón Gómez, esto permite facilitar la navegación dentro del sistema para cualquier usuario que interactúe con dicho sistema.</strong>
+                                    <div className="col-md-12 mt-3 flexbox flexcenter ">
+                                        <iframe src="https://drive.google.com/file/d/1xEA6JhOPkThkGW_8JppOaOSgFM3LfiQJ/preview" width="640" height="480" allow="autoplay"></iframe>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -171,8 +164,13 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text ">
+                                    <strong>En cada sprint analizamos y ejecutamos las ideas planteadas en cada tarea e historia de usuario esto permitió llevar a cabo la ejecución adecuada de todos los sprints planteados en el proyecto y concluir de manera exitosa el desarrollo del proyecto entregando al cliente la satisfacción de una necesidad. <a className="atributeA" target="_blank" href="https://carlosalgabez08.atlassian.net/jira/software/c/projects/NGS/boards/5/reports/sprint-retrospective?sprint=6&atlOrigin=eyJpIjoiYmNjNjdiNDg1ZjEyNDkzMmIxNTRlN2NjMmIwNjY0ZjgiLCJwIjoiaiJ9"> Ver Sprints</a></strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-7">
+                                            <img src={imgSprint} alt="" />        
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -183,8 +181,13 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text">
+                                    <strong>Tener nuestras ideas claras es fundamental pero a la hora de llevar a cabo la ejecución del desarrollo es sumamente importante ordenar de manera prioritaria esas ideas y sus respectivas tareas, es por eso que con las historias de usuarios mediante Scrum logramos ejecutar de manera ordenada las ideas de desarrollo para el proyecto Neón Gómez. <a className="atributeA" target="_blank" href="https://carlosalgabez08.atlassian.net/jira/software/c/projects/NGS/issues/NGS-25?jql=project%20%3D%20%22NGS%22%20AND%20type%20%3D%20Story%20ORDER%20BY%20created%20DESC"> Ver Historias</a></strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-7">
+                                            <img src={huNeonGomez} alt="" />        
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -195,8 +198,11 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text">
+                                    <strong>En este espacio buscamos acercarnos más al equipo de trabajo en su día a día y escuchar a cada miembro para impulsar el orden y el cumplimiento de nuestra metodología Scrum, es por eso que en nuestros dailys principalmente gestionamos nuestro desarrollo, dando a conocer en qué actividad estábamos el día anterior, que inconvenientes se tuvieron, si se solucionaron o no y en que se va estar trabajando en el día actual.<a className="atributeA" target="_blank" href="https://docs.google.com/spreadsheets/d/10iP76vgDYmHCcYzYFfKIqHR4061sV-UI/edit#gid=1231238400"> Seguimiento Dailys</a></strong>
+                                    <div className="col-md-12 mt-3 flexbox flexcenter ">
+                                        <iframe src="https://drive.google.com/file/d/1Lh8j5CegS-kN1tVC2vH96dTsHOXH6Efo/preview" width="640" height="430" allow="autoplay"></iframe>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -207,8 +213,11 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text">
+                                    <strong>Mediante la organización adecuada de los requisitos tanto funcionales como no funcionales  se levantó una lluvia de información que sirvió para centrarnos en nuestra solución final, es justo esta la matriz de requisitos que mostramos a continuación la que permitió ordenar esas ideas y dudas que surgieron en el proceso de análisis.</strong>
+                                    <div className="col-md-12 mt-3 flexbox flexcenter ">
+                                        <iframe src="https://drive.google.com/file/d/1qzbpsbRhtQJ6he2_RqoKljro81lJ_yzq/preview" width="100%" height="480" allow="autoplay"></iframe>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -220,7 +229,12 @@ const Home = (): React.ReactElement => {
                                 </h2>
                                 <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>La principal clave de la prioridad esta basada en el ordenamiento adecuado de las tareas, es por ello que con el tablero Kanban mejoramos en un 90% la agilidad del desarrollo y el cumplimiento de cada responsabilidad, siendo este un punto clave para finalizar con éxito nuestro objetivos. <a className="atributeA" target="_blank" href="https://carlosalgabez08.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiYzBiODNiNzE1OWJhNDdiNzg5N2IwZjUxMWU2MDY0OGQiLCJwIjoiaiJ9"> Ver Tablero</a></strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-7">
+                                            <img src={tablero} alt="" />      
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -231,15 +245,35 @@ const Home = (): React.ReactElement => {
                                 </button>
                                 </h2>
                                 <div id="collapseIght1" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div className="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div className="accordion-body justify-text">
+                                        <strong>En este espacio buscamos reconocer nuestras ventajas y desventajas en nuestra ejecución de cada sprint y del desarrollo del proyecto, para concluir lo que debemos mejorar a medida que avancemos en el proyecto, permitiendo tener una visión clara no solo de donde vamos a llegar sino de donde estamos. <a className="atributeA" target="_blank" href="https://jamboard.google.com/d/1lqBHEEgmGnKAqzAnUWw-5DWSs9KMGsJrcbKAoLZtID4/viewer?mtt=q1j0u98cxpst&f=0">Ver Restrospectiva</a></strong>
+                                    <div className="col-md-12 mt-3 flexbox flexcenter">
+                                        <iframe src="https://drive.google.com/file/d/1FyAMZ0-96mFaj2PEHVqWVdhwOg1qBUfN/preview" width="640" height="430" allow="autoplay"></iframe>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                             <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingeIght1">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNight" aria-expanded="false" aria-controls="collapseNight">
+                                    Backlog
+                                </button>
+                                </h2>
+                                <div id="collapseNight" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body justify-text">
+                                    <strong>En el backlog ajustamos la creación de las historias de usuarios y todos aquellos requerimientos, tareas, refinamientos y demás gestiones que permitan a nuestro equipo llevar de manera ordenada el desarrollo del proyecto Neón Gómez. <a className="atributeA" target="_blank" href="https://carlosalgabez08.atlassian.net/jira/software/c/projects/NGS/boards/5/backlog?atlOrigin=eyJpIjoiOWM2NWRiMjQ5MWEzNGRiOWJkMzQyMzFjZWE2ZTJmNGYiLCJwIjoiaiJ9">Ver Backlog</a></strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-7">
+                                            <img src={backlog} alt="" />      
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article className="container-repl">
+                {/* <article className="container-repl">
                     <div className="row align-items-center">
                         <div className="col-md-6">
                             <p className="mb-4">En el siguiente video se muestra el funcionamiento actual del desarrollo que se lleva, donde se ve la rapidez y rigidez del sistema Neón Gómez para procesar cada solitud  lo que indica una vez mas el correcto funcionamiento y cumplimiento del desarrollo</p>
@@ -251,7 +285,7 @@ const Home = (): React.ReactElement => {
                             </video>
                         </div>
                     </div>
-                </article>
+                </article> */}
                 <article className="container-repl">
                     <form id="forExample" action="#" >
                         <div className="row title-form">
