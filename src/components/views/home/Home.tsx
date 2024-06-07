@@ -5,6 +5,7 @@ import imgSprint from "../../../images/general/Sprint.png"
 import backlog from "../../../images/general/backlog.png"
 import huNeonGomez from "../../../images/general/HUNeonGomez.png"
 import nuketowsoft from "../../../icons/nuketowsoft.png"
+import review from "../../../images/general/review.png"
 import segGit from "../../../images/general/seggit.png"
 import commits from "../../../images/general/commits.png"
 import tablero from "../../../images/general/tablero.png"
@@ -253,7 +254,7 @@ const Home = (): React.ReactElement => {
                                 </div>
                                 </div>
                             </div>
-                             <div className="accordion-item">
+                            <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingeIght1">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNight" aria-expanded="false" aria-controls="collapseNight">
                                     Backlog
@@ -265,6 +266,40 @@ const Home = (): React.ReactElement => {
                                     <div className=" mt-3 flexbox flexcenter ">
                                         <div className="col-md-7">
                                             <img src={backlog} alt="" />      
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingeIght2">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNight2" aria-expanded="false" aria-controls="collapseNight2">
+                                    Planning
+                                </button>
+                                </h2>
+                                <div id="collapseNight2" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body justify-text">
+                                    <strong>La ceremonia donde se realizan la planificación y priorización de las historias de usuario y tareas para el sprint, se asignan los responsable y se determinan la capacidad en puntos de esfuerzo. </strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-12">
+                                            <iframe src="https://drive.google.com/file/d/17r9j8MY1rc-yazGQcYVVmjfL4xqJSmAy/preview"  width="100%" height="480" allow="autoplay"></iframe>   
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div className="accordion-item">
+                                <h2 className="accordion-header" id="headingeIght3">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNight3" aria-expanded="false" aria-controls="collapseNight3">
+                                    Review
+                                </button>
+                                </h2>
+                                <div id="collapseNight3" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div className="accordion-body justify-text">
+                                    <strong>Dentro de nuestro paso por ser más eficiente es importante resaltar todos los aspectos que estamos teniendo como resultado en el ejecución del proyecto, es por ello que mediante la review buscamos encontrar puntos clave con ventajas y desventajas del desarrollo, para mejorar el rendimientos y calidad de cada producto. <a className="atributeA" target="_blank" href="https://carlosalgabez08.atlassian.net/l/cp/L3YTtUi0">Ver Review</a></strong>
+                                    <div className=" mt-3 flexbox flexcenter ">
+                                        <div className="col-md-7">
+                                            <img src={review} alt="" />      
                                         </div>
                                     </div>
                                 </div>
